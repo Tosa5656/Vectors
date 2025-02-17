@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vectors", "Vectors\Vectors.vcxproj", "{B0236D85-0BB7-4121-BF79-F9C7114ADA87}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tester", "Tester\Tester.vcxproj", "{669CA845-95D3-4189-921E-E4BE451A82F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{B0236D85-0BB7-4121-BF79-F9C7114ADA87}.Release|x64.Build.0 = Release|x64
 		{B0236D85-0BB7-4121-BF79-F9C7114ADA87}.Release|x86.ActiveCfg = Release|Win32
 		{B0236D85-0BB7-4121-BF79-F9C7114ADA87}.Release|x86.Build.0 = Release|Win32
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Debug|x64.ActiveCfg = Debug|x64
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Debug|x64.Build.0 = Debug|x64
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Debug|x86.ActiveCfg = Debug|Win32
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Debug|x86.Build.0 = Debug|Win32
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Release|x64.ActiveCfg = Release|x64
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Release|x64.Build.0 = Release|x64
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Release|x86.ActiveCfg = Release|Win32
+		{669CA845-95D3-4189-921E-E4BE451A82F9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
