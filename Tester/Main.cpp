@@ -51,7 +51,74 @@ int main()
 	cout << "Vector2(4, 4) *= Vector2(2, 2): " << vecmu << endl;
 	cout << "Vector2(4, 4) /= Vector2(2, 2): " << vecd << endl << endl;
 
-	cout << "Vector(1, 1) unary test: " << -vec << endl << endl;
+	cout << "Vector2(1, 1) unary test: " << -vec << endl << endl;
+
+	cout << "Postfix test:" << endl << endl;
+	
+	cout << "++Vector2(1, 1): " << ++vec << endl;
+	cout << "--Vector2(2, 2): " << --vec << endl;
+
+	cout << "End of Vector2 test." << endl;
+
+	system("pause");
+
+
+
+	Vector3 vec_3(1, 1, 1);
+	Vector3 vec_32(5, 5, 5);
+
+	//Tests
+	cout << "Vector3 test:" << endl;
+	cout << "Test Vector3: " << vec_3 << endl << endl;
+	cout << "Basic math operations:" << endl;
+	cout << "Vector3(1, 1, 1) + Vector3(5, 5, 5): " << vec_3 + vec_32 << endl;
+	cout << "Vector3(1, 1, 1) - Vector3(5, 5, 5): " << vec_3 - vec_32 << endl;
+	cout << "Vector3(1, 1, 1) * Vector3(5, 5, 5): " << vec_3 * vec_32 << endl;
+	cout << "Vector3(1, 1, 1) / Vector3(5, 5, 5): " << vec_3 / vec_32 << endl << endl;
+
+	cout << "Comparison test(0 - false, 1 - true):" << endl;
+	bool test_31 = false;
+	bool test_32 = false;
+	bool test_33 = false;
+	bool test_34 = false;
+
+	if (vec_3 == vec_32) test_31 = true;
+	if (vec_3 != vec_32) test_32 = true;
+	if (vec_3 > vec_32) test_33 = true;
+	if (vec_3 < vec_32) test_34 = true;
+
+	cout << "Vector3(1, 1, 1) == Vector3(5, 5, 5): " << test1 << endl;
+	cout << "Vector3(1, 1, 1) != Vector3(5, 5, 5): " << test2 << endl;
+	cout << "Vector3(1, 1, 1) > Vector3(5, 5, 5):  " << test3 << endl;
+	cout << "Vector3(1, 1, 1) < Vector3(5, 5, 5):  " << test4 << endl << endl;
+
+	cout << "Assignment test:" << endl << endl;
+
+	Vector3 veca_3 = Vector3(4, 4, 4);
+	Vector3 vecm_3 = Vector3(4, 4, 4);
+	Vector3 vecmu_3 = Vector3(4, 4, 4);
+	Vector3 vecd_3 = Vector3(4, 4, 4);
+
+	veca_3 += Vector3(2, 2, 2);
+	vecm_3 -= Vector3(2, 2, 2);
+	vecmu_3 *= Vector3(2, 2, 2);
+	vecd_3 /= Vector3(2, 2, 2);
+
+	cout << "Vector3(4, 4, 4) += Vector3(2, 2, 2): " << veca_3 << endl;
+	cout << "Vector3(4, 4, 4) -= Vector3(2, 2, 2): " << vecm_3 << endl;
+	cout << "Vector3(4, 4, 4) *= Vector3(2, 2, 2): " << vecmu_3 << endl;
+	cout << "Vector3(4, 4, 4) /= Vector3(2, 2, 2): " << vecd_3 << endl << endl;
+
+	cout << "Vector3(1, 1, 1) unary test: " << -vec_3 << endl << endl;
+
+	cout << "Postfix test:" << endl << endl;
+
+	cout << "++Vector3(1, 1, 1): " << ++vec_3 << endl;
+	cout << "--Vector3(2, 2, 2): " << --vec_3 << endl;
+
+	cout << "End of Vector2 test." << endl;
+
+	system("pause");
 
 	cout << "Postfix test:" << endl << endl;
 	
