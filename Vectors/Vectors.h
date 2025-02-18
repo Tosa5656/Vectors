@@ -4,6 +4,8 @@
 
 namespace lmt
 {
+#pragma region Vector2
+
 	class Vector2
 	{
 	public:
@@ -118,4 +120,5 @@ namespace lmt
 		stream << "(" << vector.x << ", " << vector.y << ")";
 		return stream;
 	}
+#pragma endregion
 }
