@@ -2,7 +2,7 @@
 #include <Vectors.h>
 
 using namespace std;
-using namespace vectors;
+using namespace lmt;
 
 int main()
 {
