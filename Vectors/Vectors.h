@@ -246,4 +246,133 @@ namespace lmt
 	}
 #pragma endregion
 
+#pragma region Vector4
+
+	class Vector4
+	{
+	public:
+		Vector4() { x = 0; y = 0; z = 0; w = 0; }
+		Vector4(double X, double Y, double Z, double W) { x = X; y = Y; z = Z; w = W; }
+
+		//Basic
+		Vector4 operator + (const Vector4& vector) const
+		{
+			return Vector4(x + vector.x, y + vector.y, z + vector.z, w + vector.w);
+		}
+
+		Vector4 operator - (const Vector4& vector) const
+		{
+			return Vector4(x - vector.x, y - vector.y, z - vector.z, w - vector.w);
+		}
+
+		Vector4 operator * (const Vector4& vector) const
+		{
+			return Vector4(x * vector.x, y * vector.y, z * vector.z, w * vector.w);
+		}
+
+		Vector4 operator / (const Vector4& vector) const
+		{
+			return Vector4(x / vector.x, y / vector.y, z / vector.z, w / vector.w);
+		}
+
+		//Comparison
+		bool operator == (const Vector4& vector) const
+		{
+			if (x == vector.x && y == vector.y && z == vector.z && w == vector.w)
+				return true;
+			else
+				return false;
+		}
+		bool operator != (const Vector4& vector) const
+		{
+			if (x != vector.x && y != vector.y && z != vector.z && w != vector.w)
+				return true;
+			else
+				return false;
+		}
+		bool operator > (const Vector4& vector) const
+		{
+			if (x > vector.x && y > vector.y && z > vector.z && w > vector.w)
+				return true;
+			else
+				return false;
+		}
+		bool operator < (const Vector4& vector) const
+		{
+			if (x < vector.x && y < vector.y && z < vector.z && w < vector.w)
+				return true;
+			else
+				return false;
+		}
+
+		//Assignment
+		Vector4& operator += (const Vector4& vector)
+		{
+			x += vector.x;
+			y += vector.y;
+			z += vector.z;
+			w += vector.w;
+			return *this;
+		}
+
+		Vector4& operator -= (const Vector4& vector)
+		{
+			x -= vector.x;
+			y -= vector.y;
+			z -= vector.z;
+			w -= vector.w;
+			return *this;
+		}
+
+		Vector4& operator *= (const Vector4& vector)
+		{
+			x *= vector.x;
+			y *= vector.y;
+			z *= vector.z;
+			w *= vector.w;
+			return *this;
+		}
+
+		Vector4& operator /= (const Vector4& vector)
+		{
+			x /= vector.x;
+			y /= vector.y;
+			z /= vector.z;
+			w /= vector.w;
+			return *this;
+		}
+
+		//Unary
+		Vector4 operator - () const
+		{
+			return Vector4(-x, -y, -z, -w);
+		}
+
+		//Postfix
+		Vector4& operator++ ()
+		{
+			x += 1;
+			y += 1;
+			z += 1;
+			w += 1;
+			return *this;
+		}
+		Vector4& operator-- ()
+		{
+			x -= 1;
+			y -= 1;
+			z -= 1;
+			w -= 1;
+			return *this;
+		}
+
+		double x = 0, y = 0, z = 0, w = 0;
+	};
+
+	std::ostream& operator<<(std::ostream& stream, const Vector4& vector)
+	{
+		stream << "(" << vector.x << ", " << vector.y << ", " << vector.z << ", " << vector.w << ")";
+		return stream;
+	}
+#pragma endregion
 }
