@@ -121,4 +121,129 @@ namespace lmt
 		return stream;
 	}
 #pragma endregion
+
+#pragma region Vector3
+
+	class Vector3
+	{
+	public:
+		Vector3() { x = 0; y = 0; z = 0; }
+		Vector3(double X, double Y, double Z) { x = X; y = Y; z = Z; }
+
+		//Basic
+		Vector3 operator + (const Vector3& vector) const
+		{
+			return Vector3(x + vector.x, y + vector.y, z + vector.z);
+		}
+
+		Vector3 operator - (const Vector3& vector) const
+		{
+			return Vector3(x - vector.x, y - vector.y, z - vector.z);
+		}
+
+		Vector3 operator * (const Vector3& vector) const
+		{
+			return Vector3(x * vector.x, y * vector.y, z * vector.z);
+		}
+
+		Vector3 operator / (const Vector3& vector) const
+		{
+			return Vector3(x / vector.x, y / vector.y, z / vector.z);
+		}
+
+		//Comparison
+		bool operator == (const Vector3& vector) const
+		{
+			if (x == vector.x && y == vector.y && z == vector.z)
+				return true;
+			else
+				return false;
+		}
+		bool operator != (const Vector3& vector) const
+		{
+			if (x != vector.x && y != vector.y && z != vector.z)
+				return true;
+			else
+				return false;
+		}
+		bool operator > (const Vector3& vector) const
+		{
+			if (x > vector.x && y > vector.y && z > vector.z)
+				return true;
+			else
+				return false;
+		}
+		bool operator < (const Vector3& vector) const
+		{
+			if (x < vector.x && y < vector.y && z < vector.z)
+				return true;
+			else
+				return false;
+		}
+
+		//Assignment
+		Vector3& operator += (const Vector3& vector)
+		{
+			x += vector.x;
+			y += vector.y;
+			z += vector.z;
+			return *this;
+		}
+
+		Vector3& operator -= (const Vector3& vector)
+		{
+			x -= vector.x;
+			y -= vector.y;
+			z -= vector.z;
+			return *this;
+		}
+
+		Vector3& operator *= (const Vector3& vector)
+		{
+			x *= vector.x;
+			y *= vector.y;
+			z *= vector.z;
+			return *this;
+		}
+
+		Vector3& operator /= (const Vector3& vector)
+		{
+			x /= vector.x;
+			y /= vector.y;
+			z /= vector.z;
+			return *this;
+		}
+
+		//Unary
+		Vector3 operator - () const
+		{
+			return Vector3(-x, -y, -z);
+		}
+
+		//Postfix
+		Vector3& operator++ ()
+		{
+			x += 1;
+			y += 1;
+			z += 1;
+			return *this;
+		}
+		Vector3& operator-- ()
+		{
+			x -= 1;
+			y -= 1;
+			z -= 1;
+			return *this;
+		}
+
+		double x = 0, y = 0, z = 0;
+	};
+
+	std::ostream& operator<<(std::ostream& stream, const Vector3& vector)
+	{
+		stream << "(" << vector.x << ", " << vector.y << ", " << vector.z << ")";
+		return stream;
+	}
+#pragma endregion
+
 }
