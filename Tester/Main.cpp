@@ -171,8 +171,8 @@ int main()
 
 	cout << "Postfix test:" << endl << endl;
 	
-	cout << "++Vector(1,1): " << ++vec << endl;
-	cout << "--Vector(2,2): " << --vec << endl;
+	cout << "++Vector4(1, 1, 1, 1): " << ++vec_4 << endl;
+	cout << "--Vector4(2, 2, 2, 2): " << --vec_4 << endl;
 
 	cout << "End of Vector2 test." << endl;
 
