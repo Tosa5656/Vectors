@@ -170,7 +170,7 @@ int main()
 	cout << "Vector4(1, 1, 1, 1) unary test: " << -vec_4 << endl << endl;
 
 	cout << "Postfix test:" << endl << endl;
-	
+
 	cout << "++Vector4(1, 1, 1, 1): " << ++vec_4 << endl;
 	cout << "--Vector4(2, 2, 2, 2): " << --vec_4 << endl;
 
