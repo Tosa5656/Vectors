@@ -120,6 +120,55 @@ int main()
 
 	system("pause");
 
+
+
+	Vector4 vec_4(1, 1, 1, 1);
+	Vector4 vec2_4(5, 5, 5, 5);
+
+	//Tests
+	cout << "Vector4 test:" << endl;
+	cout << "Test Vector4: " << vec_4 << endl << endl;
+	cout << "Basic math operations:" << endl;
+	cout << "Vector4(1, 1, 1, 1) + Vector4(5, 5, 5, 5): " << vec_4 + vec2_4 << endl;
+	cout << "Vector4(1, 1, 1, 1) - Vector4(5, 5, 5, 5): " << vec_4 - vec2_4 << endl;
+	cout << "Vector4(1, 1, 1, 1) * Vector4(5, 5, 5, 5): " << vec_4 * vec2_4 << endl;
+	cout << "Vector4(1, 1, 1, 1) / Vector4(5, 5, 5, 5): " << vec_4 / vec2_4 << endl << endl;
+
+	cout << "Comparison test(0 - false, 1 - true):" << endl;
+	bool test_41 = false;
+	bool test_42 = false;
+	bool test_43 = false;
+	bool test_44 = false;
+
+	if (vec_4 == vec2_4) test_41 = true;
+	if (vec_4 != vec2_4) test_42 = true;
+	if (vec_4 > vec2_4) test_43 = true;
+	if (vec_4 < vec2_4) test_44 = true;
+
+	cout << "Vector4(1, 1, 1, 1) == Vector4(5, 5, 5 ,5): " << test_41 << endl;
+	cout << "Vector4(1, 1, 1, 1) != Vector4(5, 5, 5, 5): " << test_42 << endl;
+	cout << "Vector4(1, 1, 1, 1) > Vector4(5, 5, 5, 5):  " << test_43 << endl;
+	cout << "Vector4(1, 1, 1, 1) < Vector4(5, 5, 5, 5):  " << test_44 << endl << endl;
+
+	cout << "Assignment test:" << endl << endl;
+
+	Vector4 veca_4 = Vector4(4, 4, 4, 4);
+	Vector4 vecm_4 = Vector4(4, 4, 4, 4);
+	Vector4 vecmu_4 = Vector4(4, 4, 4, 4);
+	Vector4 vecd_4 = Vector4(4, 4, 4, 4);
+
+	veca_4 += Vector4(2, 2, 2, 2);
+	vecm_4 -= Vector4(2, 2, 2, 2);
+	vecmu_4 *= Vector4(2, 2, 2, 2);
+	vecd_4 /= Vector4(2, 2, 2, 2);
+
+	cout << "Vector4(4, 4, 4, 4) += Vector4(2, 2, 2, 2): " << veca << endl;
+	cout << "Vector4(4, 4, 4, 4) -= Vector4(2, 2, 2, 2): " << vecm << endl;
+	cout << "Vector4(4, 4, 4, 4) *= Vector4(2, 2, 2, 2): " << vecmu << endl;
+	cout << "Vector4(4, 4, 4, 4) /= Vector4(2, 2, 2, 2): " << vecd << endl << endl;
+
+	cout << "Vector4(1, 1, 1, 1) unary test: " << -vec_4 << endl << endl;
+
 	cout << "Postfix test:" << endl << endl;
 	
 	cout << "++Vector(1,1): " << ++vec << endl;
