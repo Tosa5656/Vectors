@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace vectors
+namespace lmt
 {
 	class Vector2
 	{
